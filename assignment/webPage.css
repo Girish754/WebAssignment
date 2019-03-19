@@ -29,11 +29,14 @@ h1{
 	font-weight: bold;
 }
 
-div{
+.mainDiv{
 	text-align: center;
 	font-family: arial;	
-	line-height: 1.6;
 	font-size: 1.4em;
+}
+
+i{
+	color: black;
 }
 
 .button {
@@ -46,4 +49,11 @@ div{
 
 .imaging{
 	float: left;
+	width: 40%;
+	margin: 5%;
 }
+
+.aa{
+	color: black;
+}
+
