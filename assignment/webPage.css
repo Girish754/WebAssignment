@@ -1,0 +1,49 @@
+body{
+	background-repeat: no-repeat;
+	color: white;
+	background-size: 100%;
+}
+
+ul{
+	list-style-type: none;
+	word-spacing: 30px;
+	margin: 4%;
+	padding: 0px 20px 60px 80px;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 80%;
+}
+
+li{
+	display: inline;
+}
+
+h1{
+	text-align: center;
+	font-size: 5em;
+}
+
+#heading{
+	font-size: 35px;
+	word-spacing: 0px;
+	font-weight: bold;
+}
+
+div{
+	text-align: center;
+	font-family: arial;	
+	line-height: 1.6;
+	font-size: 1.4em;
+}
+
+.button {
+  background-color: #FFFFFF;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.imaging{
+	float: left;
+}
