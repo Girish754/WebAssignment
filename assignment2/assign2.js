@@ -43,15 +43,39 @@ var btn = document.querySelector(".btn_submit");
 						var row = rows[i];
 						var keysInRow = Object.keys(row);
 						for (var j=0 ; j<keysInRow.length ; j++) {
-							// console.log(keys + "---");
+							 console.log(keysInRow + "---");
 
 							var tdata = document.createElement("td");
 							
 							if (keysInRow[j] == "HomePage") {
 								var anchor = document.createElement("a");
 								anchor.setAttribute('href', row[keysInRow[j]]); 
-								anchor.innerHTML = "link";
-								tdata.innerHTML = anchor;
+								anchor.innerHTML = row[keysInRow[j]];
+								tdata.appendChild(anchor);
+								// tdata.innerHTML = anchor;
+							}
+							else if (keysInRow[j] == "Logo") {
+								var image = document.createElement("img");
+								image.setAttribute('src',row[keysInRow[j]]);
+								tdata.appendChild(image);
+	
+							}
+							else if (keysInRow[j] == "Hubs") {
+								var ul = document.createElement("ul");
+								var hub = row[keysInRow[j]].Hub;	
+								for (var k = 0; k < hub.length; k++) {
+									var liHub = document.createElement("li");
+									if (k === 0) {
+										var strong = document.createElement("strong");
+										strong.innerHTML = hub[k];
+										liHub.appendChild(strong);
+									}
+									else{
+										liHub.innerHTML = hub[k];
+									}
+									ul.appendChild(liHub);
+								}
+								tdata.appendChild(ul);
 							}
 							else {
 								tdata.innerHTML = row[keysInRow[j]];
